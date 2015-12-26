@@ -35,12 +35,11 @@ casheSolve <- function(x, ...){
                 return(inv)
         }
         data <- x$get()
-        i <- solve(data, ...)
+        i <- solve(data, ...)#This inverses the matrix
         x$setinv(i)
         i
 }
 
 
-## Write a short comment describing this function
 
 
